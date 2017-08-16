@@ -1,0 +1,96 @@
+2017/08/16 13:46:17 [emerg] 18#18: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2017/08/16 13:46:17 [emerg] 18#18: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2017/08/16 13:46:17 [emerg] 18#18: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2017/08/16 13:46:17 [emerg] 18#18: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2017/08/16 13:46:17 [emerg] 18#18: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2017/08/16 13:51:18 [emerg] 21#21: unexpected end of parameter, expecting ";" in command line
+2017/08/16 13:51:27 [emerg] 24#24: unexpected end of parameter, expecting ";" in command line
+2017/08/16 13:51:30 [emerg] 27#27: unexpected end of parameter, expecting ";" in command line
+2017/08/16 14:01:44 [error] 6#6: *1 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:01:45 [error] 6#6: *1 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:01:45 [error] 6#6: *1 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:04 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:04 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:05 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:05 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:05 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:02:06 [error] 6#6: *2 open() "/hc/html/users/1" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:03:31 [error] 7#7: *2 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: Cannot serialise function: type not supported
+stack traceback:
+coroutine 0:
+	[C]: in function 'encode'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:03:32 [error] 7#7: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: Cannot serialise function: type not supported
+stack traceback:
+coroutine 0:
+	[C]: in function 'encode'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:03:32 [error] 7#7: *3 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: Cannot serialise function: type not supported
+stack traceback:
+coroutine 0:
+	[C]: in function 'encode'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:08:58 [error] 6#6: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: bad argument #1 to 'say' (string, number, boolean, nil, ngx.null, or array table expected, but got function)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1?foo=123 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:08:59 [error] 6#6: *2 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: bad argument #1 to 'say' (string, number, boolean, nil, ngx.null, or array table expected, but got function)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1?foo=123 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:08:59 [error] 6#6: *3 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: bad argument #1 to 'say' (string, number, boolean, nil, ngx.null, or array table expected, but got function)
+stack traceback:
+coroutine 0:
+	[C]: in function 'say'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1?foo=123 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:12:16 [error] 7#7: *1 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: bad argument #1 to 'print' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'print'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1?foo=123 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:12:17 [error] 7#7: *2 lua entry thread aborted: runtime error: content_by_lua(nginx.conf:28):6: bad argument #1 to 'print' (non-array table found)
+stack traceback:
+coroutine 0:
+	[C]: in function 'print'
+	content_by_lua(nginx.conf:28):6: in function <content_by_lua(nginx.conf:28):1>, client: 172.17.0.1, server: , request: "GET /users/1?foo=123 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:21:38 [error] 6#6: *1 open() "/hc/html/users/sss" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/sss?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:37 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:38 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:38 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:38 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:47 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:48 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:30:48 [error] 7#7: *1 open() "/hc/html/users/1111" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/1111?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:32:05 [error] 6#6: *1 open() "/hc/html/users/asdad" failed (2: No such file or directory), client: 172.17.0.1, server: , request: "GET /users/asdad?foo=123&sdfs=2343 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:44:46 [error] 7#7: *2 failed to load inlined Lua code: content_by_lua(nginx.conf:28):2: unexpected symbol near '$', client: 172.17.0.1, server: , request: "GET /users/9991 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:44:47 [error] 7#7: *1 failed to load inlined Lua code: content_by_lua(nginx.conf:28):2: unexpected symbol near '$', client: 172.17.0.1, server: , request: "GET /users/9991 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:44:47 [error] 7#7: *3 failed to load inlined Lua code: content_by_lua(nginx.conf:28):2: unexpected symbol near '$', client: 172.17.0.1, server: , request: "GET /users/9991 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:51:21 [error] 6#6: *1 failed to load inlined Lua code: access_by_lua(nginx.conf:36):12: 'end' expected (to close 'function' at line 1) near '<eof>', client: 172.17.0.1, server: , request: "GET /users/9991 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:51:22 [error] 6#6: *2 failed to load inlined Lua code: access_by_lua(nginx.conf:36):12: 'end' expected (to close 'function' at line 1) near '<eof>', client: 172.17.0.1, server: , request: "GET /users/9991 HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:58:36 [error] 7#7: *3 lua entry thread aborted: runtime error: access_by_lua(nginx.conf:32):4: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	access_by_lua(nginx.conf:32):4: in function <access_by_lua(nginx.conf:32):1>, client: 172.17.0.1, server: , request: "POST /users/new HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:58:42 [error] 7#7: *4 lua entry thread aborted: runtime error: access_by_lua(nginx.conf:32):4: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	access_by_lua(nginx.conf:32):4: in function <access_by_lua(nginx.conf:32):1>, client: 172.17.0.1, server: , request: "POST /users/new HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:58:43 [error] 7#7: *5 lua entry thread aborted: runtime error: access_by_lua(nginx.conf:32):4: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	access_by_lua(nginx.conf:32):4: in function <access_by_lua(nginx.conf:32):1>, client: 172.17.0.1, server: , request: "POST /users/new HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:58:44 [error] 7#7: *6 lua entry thread aborted: runtime error: access_by_lua(nginx.conf:32):4: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	access_by_lua(nginx.conf:32):4: in function <access_by_lua(nginx.conf:32):1>, client: 172.17.0.1, server: , request: "POST /users/new HTTP/1.1", host: "127.0.0.1:8080"
+2017/08/16 14:59:03 [error] 7#7: *7 lua entry thread aborted: runtime error: access_by_lua(nginx.conf:32):4: bad argument #1 to 'decode' (string expected, got nil)
+stack traceback:
+coroutine 0:
+	[C]: in function 'decode'
+	access_by_lua(nginx.conf:32):4: in function <access_by_lua(nginx.conf:32):1>, client: 172.17.0.1, server: , request: "POST /users/new HTTP/1.1", host: "127.0.0.1:8080"
