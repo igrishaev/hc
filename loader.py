@@ -20,7 +20,7 @@ def call_http (entity, item):
     url = "http://127.0.0.1:8080/%s/new" % entity
     data = json.dumps(item)
     resp = urllib2.urlopen(url, data)
-    assert resp.getcode() == 200
+    assert resp.getcode() == 200, str(item)
 
 
 def load_data (data):
