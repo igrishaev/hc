@@ -6,8 +6,10 @@ import urllib2
 import os
 
 ZIP_PATH = os.environ["ZIP_PATH"]
+BASE_URL = os.environ["BASE_URL"]
 
 assert ZIP_PATH, "No zip path"
+assert BASE_URL, "No base URL"
 
 
 def read_zip (path):
@@ -17,7 +19,7 @@ def read_zip (path):
 
 
 def call_http (entity, item):
-    url = "http://127.0.0.1:8080/%s/new" % entity
+    url = "%s/%s/new" % (BASE_URL, entity)
     data = json.dumps(item)
     resp = urllib2.urlopen(url, data)
     assert resp.getcode() == 200, str(item)
