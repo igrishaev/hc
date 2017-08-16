@@ -11,6 +11,6 @@ RUN sudo apt-get install python -y
 
 COPY init.sh .
 COPY loader.py .
-COPY nginx.conf .
+COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 
 ENTRYPOINT /init.sh

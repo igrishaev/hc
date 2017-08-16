@@ -1,12 +1,12 @@
 #!/bin/sh
 
 echo "Starting Nginx"
-nginx -c /nginx.conf
+/usr/local/openresty/bin/openresty
 
 echo "Sleep a bit"
 sleep 5
 
-echo "Load data"
+echo "Loading data"
 python /loader.py
 
 echo "Done"

@@ -1,6 +1,8 @@
 
 PROJECT := hc
-TAG := latest
+REPO_HOST := stor.highloadcup.ru
+REPO_PATH := travels/steep_catfish
+TAG := 0.1
 
 docker-build:
 	docker build --no-cache -t $(PROJECT):$(TAG) .
@@ -11,3 +13,11 @@ docker-run:
 	-p 8080:80 \
 	-v $(CURDIR)/tmp/data:/tmp/data:ro \
 	$(PROJECT):$(TAG)
+
+docker-tag:
+	docker tag $(PROJECT):$(TAG) $(REPO_HOST)/$(REPO_PATH)
+
+docker-push:
+	docker push $(REPO_HOST)/$(REPO_PATH)
+
+deploy: docker-build docker-tag docker-push
