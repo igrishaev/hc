@@ -12,6 +12,7 @@ docker-run:
 	-it --rm \
 	-p 8080:80 \
 	-v $(CURDIR)/tmp/data:/tmp/data:ro \
+	-v $(CURDIR)/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro \
 	$(PROJECT):$(TAG)
 
 docker-tag:
