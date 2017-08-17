@@ -9,6 +9,8 @@ WORKDIR /
 
 RUN sudo apt-get install python -y
 
+RUN luarocks install lsqlite3complete
+
 COPY init.sh .
 COPY loader.py .
 COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
