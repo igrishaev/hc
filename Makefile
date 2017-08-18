@@ -2,7 +2,7 @@
 PROJECT := hc
 REPO_HOST := stor.highloadcup.ru
 REPO_PATH := travels/steep_catfish
-TAG := 0.1
+TAG := cache
 
 docker-build:
 	docker build --no-cache -t $(PROJECT):$(TAG) .
