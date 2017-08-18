@@ -4,7 +4,7 @@ REPO_HOST := stor.highloadcup.ru
 REPO_PATH := travels/steep_catfish
 TAG := cache
 
-docker-build: loader-build
+docker-build:
 	docker build --no-cache -t $(PROJECT):$(TAG) .
 
 docker-run:
