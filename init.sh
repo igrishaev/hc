@@ -7,7 +7,7 @@ echo "Sleep a bit"
 sleep 5
 
 echo "Loading data"
-java -jar /loader.jar
+timeout 300s java -jar /loader.jar
 
 echo "Done"
 sleep infinity
