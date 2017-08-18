@@ -10,9 +10,10 @@ docker-build:
 docker-run:
 	docker run \
 	-it --rm \
-	-p 8080:80 \
+	-p 80:80 \
 	-v $(CURDIR)/tmp/data:/tmp/data:ro \
 	-v $(CURDIR)/init.sh:/init.sh \
+	-v $(CURDIR)/loader.py:/loader.py \
 	-v $(CURDIR)/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro \
 	$(PROJECT):$(TAG)
 
