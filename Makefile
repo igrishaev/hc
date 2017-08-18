@@ -4,7 +4,7 @@ REPO_HOST := stor.highloadcup.ru
 REPO_PATH := travels/steep_catfish
 TAG := cache
 
-docker-build:
+docker-build: loader-build
 	docker build --no-cache -t $(PROJECT):$(TAG) .
 
 docker-run:
@@ -13,7 +13,7 @@ docker-run:
 	-p 80:80 \
 	-v $(CURDIR)/tmp/data:/tmp/data:ro \
 	-v $(CURDIR)/init.sh:/init.sh \
-	-v $(CURDIR)/loader.py:/loader.py \
+	-v $(CURDIR)/loader/target/uberjar/loader.jar:/loader.jar \
 	-v $(CURDIR)/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro \
 	$(PROJECT):$(TAG)
 
@@ -28,6 +28,5 @@ loader-build:
 
 loader-run:
 	make -C loader uberjar-run
-
 
 deploy: docker-build docker-tag docker-push
