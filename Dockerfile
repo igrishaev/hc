@@ -5,10 +5,10 @@ ENV BASE_URL "http://127.0.0.1"
 
 EXPOSE 80
 
-# RUN apt-get install software-properties-common python-software-properties -y
-# RUN add-apt-repository ppa:openjdk-r/ppa
-# RUN apt-get update
-# RUN apt-get install openjdk-8-jre -y
+RUN apt-get install software-properties-common python-software-properties -y
+RUN add-apt-repository ppa:openjdk-r/ppa
+RUN apt-get update
+RUN apt-get install openjdk-8-jre -y
 
 RUN /usr/local/openresty/luajit/bin/luarocks install lsqlite3complete
 
