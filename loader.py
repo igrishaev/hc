@@ -15,7 +15,8 @@ assert BASE_URL, "No base URL"
 def read_zip (path):
     zfile = ZipFile(path, 'r')
     return (json.loads(zfile.read(name))
-            for name in zfile.namelist())
+            for name in zfile.namelist()
+            if name.endswith(".json"))
 
 
 def call_http (entity, item):

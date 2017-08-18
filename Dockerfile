@@ -9,7 +9,7 @@ WORKDIR /
 
 RUN sudo apt-get install python -y
 
-RUN ulimit -n 200000
+RUN ulimit -n 16000
 
 COPY init.sh .
 COPY loader.py .
