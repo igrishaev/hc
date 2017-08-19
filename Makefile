@@ -5,7 +5,7 @@ REPO_PATH := travels/steep_catfish
 TAG := cache
 
 docker-build:
-	docker build -t $(PROJECT):$(TAG) .
+	docker build --no-cache -t $(PROJECT):$(TAG) .
 
 docker-run:
 	docker run \
